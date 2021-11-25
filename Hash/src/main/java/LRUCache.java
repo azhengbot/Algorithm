@@ -1,3 +1,6 @@
+// LRU缓存机制-146
+// https://leetcode-cn.com/problems/lru-cache/
+
 import java.util.HashMap;
 
 public class LRUCache {
