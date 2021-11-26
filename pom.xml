@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Array</module>
-        <module>Map</module>
+        <module>Hash</module>
     </modules>
 
     <properties>
