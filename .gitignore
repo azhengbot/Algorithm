@@ -97,3 +97,10 @@ Guardfile
 README.html
 *.iml
 .idea
+
+# python
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
