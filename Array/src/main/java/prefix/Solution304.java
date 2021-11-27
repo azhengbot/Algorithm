@@ -1,3 +1,4 @@
+package prefix;
 public class Solution304 {
     int sum[][];
 
