@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Solution47",
+            "request": "launch",
+            "mainClass": "week03.Solution47",
+            "projectName": "HomeWork"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution106",
+            "request": "launch",
+            "mainClass": "week03.Solution106",
+            "projectName": "HomeWork"
+        },
+        {
+            "type": "java",
             "name": "Launch Solution106",
             "request": "launch",
             "mainClass": "tree.Solution106",
