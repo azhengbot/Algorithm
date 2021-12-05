@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Solution22",
+            "request": "launch",
+            "mainClass": "divide_and_conquer.Solution22",
+            "projectName": "Recursion"
+        },
+        {
+            "type": "java",
             "name": "Launch Solution50",
             "request": "launch",
             "mainClass": "Solution50",
