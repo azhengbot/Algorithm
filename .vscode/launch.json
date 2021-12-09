@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Solution200",
+            "request": "launch",
+            "mainClass": "bfs.Solution200",
+            "projectName": "Search"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution17",
+            "request": "launch",
+            "mainClass": "dfs.Solution17",
+            "projectName": "Search"
+        },
+        {
+            "type": "java",
             "name": "Launch Solution47",
             "request": "launch",
             "mainClass": "week03.Solution47",

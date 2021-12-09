@@ -1,4 +1,5 @@
 {
     "java.configuration.updateBuildConfiguration": "automatic",
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "black",
+    "maven.view": "flat"
 }
