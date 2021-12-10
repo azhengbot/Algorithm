@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Solution433",
+            "request": "launch",
+            "mainClass": "bfs.Solution433",
+            "projectName": "Search"
+        },
+        {
+            "type": "java",
             "name": "Launch Solution200",
             "request": "launch",
             "mainClass": "bfs.Solution200",
