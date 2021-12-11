@@ -7,7 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Array" />
+        <module name="Heapq" />
+        <module name="HomeWork" />
+        <module name="Search" />
         <module name="Hash" />
+        <module name="Recursion" />
+        <module name="Common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />

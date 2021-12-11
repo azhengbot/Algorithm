@@ -20,6 +20,7 @@
   <modules>
                 
     
+    <module>Common</module>
     <module>Array</module>
         
     <module>Hash</module>
@@ -29,6 +30,7 @@
     <module>HomeWork</module>
           
     <module>Search</module>
+    <module>Heapq</module>
       
   </modules>
         
