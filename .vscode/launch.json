@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Solution528",
+            "request": "launch",
+            "mainClass": "Solution528",
+            "projectName": "BinarySearchTree"
+        },
+        {
+            "type": "java",
             "name": "Launch Solution130",
             "request": "launch",
             "mainClass": "week04.Solution130",
