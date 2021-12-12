@@ -22,15 +22,12 @@
     
     <module>Common</module>
     <module>Array</module>
-        
     <module>Hash</module>
-        
     <module>Recursion</module>
-        
     <module>HomeWork</module>
-          
     <module>Search</module>
     <module>Heapq</module>
+    <module>BinarySearchTree</module>
       
   </modules>
         
