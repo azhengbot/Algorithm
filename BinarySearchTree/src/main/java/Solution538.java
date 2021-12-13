@@ -1,7 +1,7 @@
 
 import common.TreeNode;
 
-public class Solution528 {
+public class Solution538 {
     int sum = 0;
 
     public TreeNode convertBST(TreeNode root) {
@@ -23,7 +23,7 @@ public class Solution528 {
     }
 
     public static void main(String[] args) {
-        Solution528 s = new Solution528();
+        Solution538 s = new Solution538();
         TreeNode root = new TreeNode(4);
         TreeNode left = new TreeNode(3);
         TreeNode right = new TreeNode(6);
