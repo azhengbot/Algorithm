@@ -28,6 +28,7 @@
     <module>Search</module>
     <module>Heapq</module>
     <module>BinarySearchTree</module>
+    <module>BinarySearch</module>
       
   </modules>
         
