@@ -12,13 +12,4 @@
     <artifactId>BinarySearch</artifactId>
 
 
-    <dependencies>
-        <dependency>
-            <artifactId>Common</artifactId>
-            <groupId>org.azheng</groupId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
-    
-
 </project>
