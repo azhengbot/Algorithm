@@ -14,7 +14,7 @@ public class Solution34 {
             }
 
         }
-        if (nums[right] == target) {
+        if (right >= 0 && nums[right] == target) {
             ans[1] = right;
         }
 
@@ -29,8 +29,8 @@ public class Solution34 {
             }
 
         }
-        if (nums[right] == target) {
-            ans[1] = right;
+        if (right >= 0 && nums[right] == target) {
+            ans[0] = right;
         }
 
         return ans;
@@ -39,10 +39,10 @@ public class Solution34 {
     public static void main(String[] args) {
         Solution34 s = new Solution34();
         // int[] nums = { 5, 7, 7, 8, 8, 10 };
-        // int target = 6;
-        // int[] nums = {};
-        int[] nums = { 1 };
-        int target = 1;
+        int target = 6;
+        int[] nums = {};
+        // int[] nums = { 1 };
+        // int target = 1;
 
         int[] res = s.searchRange(nums, target);
 
