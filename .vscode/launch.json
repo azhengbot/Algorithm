@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Solution34",
+            "request": "launch",
+            "mainClass": "Solution34",
+            "projectName": "BinarySearch"
+        },
+        {
+            "type": "java",
             "name": "Launch Solution704",
             "request": "launch",
             "mainClass": "Solution704",
