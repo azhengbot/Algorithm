@@ -14,7 +14,6 @@ public class Solution239 {
 
             @Override
             public int compareTo(Pair o) {
-                // TODO Auto-generated method stub
                 return this.value - o.value;
             }
 
