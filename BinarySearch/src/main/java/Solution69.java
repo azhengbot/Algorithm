@@ -4,7 +4,8 @@ public class Solution69 {
         int right = x;
         while (left < right) {
             int mid = (left + right + 1) / 2;
-            if (mid * mid <= x) {
+            // 相乘会越界
+            if (mid <= x / mid) {
                 left = mid;
             } else {
                 right = mid - 1;
