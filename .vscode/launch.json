@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [{
             "type": "java",
+            "name": "Launch Solution162",
+            "request": "launch",
+            "mainClass": "Solution162",
+            "projectName": "BinarySearch"
+        },
+        {
+            "type": "java",
             "name": "Launch Solution69",
             "request": "launch",
             "mainClass": "Solution69",
