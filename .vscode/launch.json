@@ -3,7 +3,29 @@
     // 悬停以查看现有属性的描述。
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Solution215",
+            "request": "launch",
+            "mainClass": "Solution215",
+            "projectName": "BinarySearch"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution374",
+            "request": "launch",
+            "mainClass": "Solution374",
+            "projectName": "BinarySearch"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution1011",
+            "request": "launch",
+            "mainClass": "Solution1011",
+            "projectName": "BinarySearch"
+        },
+        {
             "type": "java",
             "name": "Launch Solution162",
             "request": "launch",
