@@ -30,6 +30,9 @@
 
     <module>BinarySearchTree</module>
     <module>BinarySearch</module>
+    <module>Sort</module>
+    <module>Greedy</module>
+    
       
   </modules>
         
