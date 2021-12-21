@@ -32,6 +32,7 @@
     <module>BinarySearch</module>
     <module>Sort</module>
     <module>Greedy</module>
+    <module>DP</module>
     
       
   </modules>
