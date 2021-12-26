@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Solution42",
+            "request": "launch",
+            "mainClass": "monotonicity.Solution42",
+            "projectName": "Array"
+        },
+        {
+            "type": "java",
             "name": "Launch Solution215",
             "request": "launch",
             "mainClass": "Solution215",
