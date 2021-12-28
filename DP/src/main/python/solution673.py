@@ -1,6 +1,6 @@
 from typing import List
 
-
+# https://leetcode-cn.com/problems/number-of-longest-increasing-subsequence/
 class Solution:
     def findNumberOfLIS(self, nums: List[int]) -> int:
         n = len(nums)
