@@ -14,5 +14,5 @@ class Solution:
             opt[i][0] = min(opt[i - 1][0] * nums[i], opt[i - 1][1] * nums[i], nums[i])
             opt[i][1] = max(opt[i - 1][0] * nums[i], opt[i - 1][1] * nums[i], nums[i])
 
-        # print(opt)
+        print(opt)
         return max(sum(opt, []))
