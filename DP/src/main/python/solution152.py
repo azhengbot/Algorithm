@@ -1,5 +1,7 @@
 from typing import List
 
+# https://leetcode-cn.com/problems/maximum-product-subarray/
+
 
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
