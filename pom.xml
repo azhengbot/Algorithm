@@ -33,6 +33,8 @@
     <module>Sort</module>
     <module>Greedy</module>
     <module>DP</module>
+
+    <module>Tree</module>
     
       
   </modules>
