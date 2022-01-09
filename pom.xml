@@ -35,6 +35,7 @@
     <module>DP</module>
 
     <module>Tree</module>
+    <module>UnionFindSet</module>
     
       
   </modules>
