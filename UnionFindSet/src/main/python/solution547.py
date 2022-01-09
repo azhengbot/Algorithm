@@ -41,3 +41,19 @@ s = Solution()
 isConnected = [[1, 1, 0], [1, 1, 0], [0, 0, 1]]
 res = s.findCircleNum(isConnected)
 print(res)
+
+fa = [0, 1, 1, 2, 3, 4]
+
+
+def test_find(x):
+
+    if x == fa[x]:
+        return x
+
+    fa[x] = test_find(fa[x])
+
+    print(fa)
+    return fa[x]
+
+
+print(test_find(5))
