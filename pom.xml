@@ -36,6 +36,7 @@
 
     <module>Tree</module>
     <module>UnionFindSet</module>
+    <module>ShortestPath</module>
     
       
   </modules>
