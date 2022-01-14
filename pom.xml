@@ -38,6 +38,7 @@
     <module>UnionFindSet</module>
     <module>ShortestPath</module>
     <module>Strings</module>
+    <module>KWayMerge</module>
     
       
   </modules>
