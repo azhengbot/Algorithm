@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [{
             "type": "java",
+            "name": "Launch Solution239",
+            "request": "launch",
+            "mainClass": "week10.Solution239",
+            "projectName": "HomeWork"
+        },
+        {
+            "type": "java",
             "name": "Launch Solution5",
             "request": "launch",
             "mainClass": "Solution5",
