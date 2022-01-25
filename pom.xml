@@ -39,6 +39,7 @@
     <module>ShortestPath</module>
     <module>Strings</module>
     <module>KWayMerge</module>
+    <module>Bit</module>
     
       
   </modules>
