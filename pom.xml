@@ -21,6 +21,7 @@
                 
     
     <module>Common</module>
+    <module>BasicDataType</module>
     <module>Array</module>
     <module>Hash</module>
     <module>Recursion</module>
