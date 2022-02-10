@@ -41,6 +41,7 @@
     <module>Strings</module>
     <module>KWayMerge</module>
     <module>Bit</module>
+    <module>CodeTemplate</module>
     
       
   </modules>
