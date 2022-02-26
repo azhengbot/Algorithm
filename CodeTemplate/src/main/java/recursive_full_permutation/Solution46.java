@@ -1,4 +1,4 @@
-package full_permutation_recursion;
+package recursive_full_permutation;
 
 /*
  * @lc app=leetcode.cn id=46 lang=java
