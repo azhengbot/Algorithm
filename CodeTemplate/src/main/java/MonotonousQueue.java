@@ -1,4 +1,4 @@
-package monotonous_queue;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 
@@ -60,7 +60,7 @@ import java.util.Deque;
  */
 
 // @lc code=start
-public class Solution239 {
+public class MonotonousQueue {
     public int[] maxSlidingWindow(int[] nums, int k) {
         int n = nums.length;
         int[] ans = new int[n - k + 1];

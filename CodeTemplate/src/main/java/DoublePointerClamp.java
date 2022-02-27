@@ -1,4 +1,3 @@
-package double_pointer_clamp;
 
 /*
  * @lc app=leetcode.cn id=167 lang=java
@@ -63,7 +62,7 @@ package double_pointer_clamp;
  */
 
 // @lc code=start
-class Solution {
+class Solution167 {
     public int[] twoSum(int[] numbers, int target) {
         int n = numbers.length;
         int left = 0;

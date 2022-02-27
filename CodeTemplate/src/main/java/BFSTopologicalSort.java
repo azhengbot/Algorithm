@@ -1,4 +1,3 @@
-package bfs_topological_sort;
 
 /*
  * @lc app=leetcode.cn id=210 lang=java
@@ -66,7 +65,7 @@ package bfs_topological_sort;
 // @lc code=start
 import java.util.*;
 
-class Solution {
+class Solution210 {
     public int[] findOrder(int numCourses, int[][] prerequisites) {
         List<List<Integer>> to = new ArrayList<>();
         for (int i = 0; i < numCourses; i++) {

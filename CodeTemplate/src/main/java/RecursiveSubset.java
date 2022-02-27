@@ -1,4 +1,3 @@
-package recursive_subset;
 
 /*
  * @lc app=leetcode.cn id=78 lang=java
@@ -50,7 +49,7 @@ package recursive_subset;
 // @lc code=start
 import java.util.*;
 
-class Solution {
+class Solution78 {
     private int n;
     private List<List<Integer>> ans = new ArrayList<>();
     private List<Integer> subAns = new ArrayList<>();

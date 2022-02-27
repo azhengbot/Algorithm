@@ -1,4 +1,3 @@
-package recursive_full_permutation;
 
 /*
  * @lc app=leetcode.cn id=46 lang=java
@@ -56,7 +55,7 @@ package recursive_full_permutation;
 import java.util.List;
 import java.util.ArrayList;
 
-class Solution {
+class Solution46 {
     private int n;
     private List<Integer> subAns = new ArrayList<>();
     private List<List<Integer>> ans = new ArrayList<>();

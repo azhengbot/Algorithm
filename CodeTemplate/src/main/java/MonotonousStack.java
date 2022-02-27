@@ -1,4 +1,4 @@
-package monotonous_stack;
+
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
@@ -55,7 +55,7 @@ import java.util.Deque;
  */
 
 // @lc code=start
-public class Solution84 {
+public class MonotonousStack {
     public int largestRectangleArea(int[] heights) {
 
         int[] heightsWithZero = Arrays.copyOf(heights, heights.length + 1);
@@ -79,7 +79,7 @@ public class Solution84 {
     }
 
     public static void main(String[] args) {
-        Solution84 s = new Solution84();
+        MonotonousStack s = new MonotonousStack();
         // int[] heights = { 2, 1, 5, 6, 2, 3 };
         int[] heights = { 2, 4 };
         int res = s.largestRectangleArea(heights);

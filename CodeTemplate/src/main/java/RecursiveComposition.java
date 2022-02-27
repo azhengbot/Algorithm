@@ -1,4 +1,3 @@
-package recursive_composition;
 
 /*
  * @lc app=leetcode.cn id=77 lang=java
@@ -55,7 +54,7 @@ package recursive_composition;
 // @lc code=start
 import java.util.*;
 
-class Solution {
+class Solution77 {
     private List<List<Integer>> ans = new ArrayList<>();
     private List<Integer> subAns = new ArrayList<>();
     private int n;

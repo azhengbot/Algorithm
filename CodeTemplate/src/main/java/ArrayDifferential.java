@@ -1,4 +1,3 @@
-package array_differential;
 
 import java.util.Arrays;
 
@@ -68,7 +67,7 @@ import java.util.Arrays;
  */
 
 // @lc code=start
-class Solution {
+class Solution1109 {
     public int[] corpFlightBookings(int[][] bookings, int n) {
         int[] delta = new int[n + 2];
 
@@ -81,7 +80,7 @@ class Solution {
             delta[last + 1] -= seats;
         }
 
-        int[] deltaPreSum = new int[n+1];
+        int[] deltaPreSum = new int[n + 1];
 
         for (int i = 1; i < n + 1; i++) {
             deltaPreSum[i] = deltaPreSum[i - 1] + delta[i];

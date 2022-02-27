@@ -1,4 +1,3 @@
-package two_dimensional_prefix_sum;
 
 /*
  * @lc app=leetcode.cn id=304 lang=java

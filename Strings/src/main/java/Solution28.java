@@ -1,6 +1,3 @@
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class Solution28 {
     public int strStr(String haystack, String needle) {
