@@ -52,6 +52,21 @@ class Solution:
 # @lc code=end
 
 
+# 普通二分查找
+def binary_search(array, target):
+    left, right = 0, len(array) - 1
+    while left <= right:
+        mid = (left + right) / 2
+        if array[mid] == target:
+            # find the target!!
+            # break or return result
+            return mid
+        elif array[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+
+
 # 实数二分模板
 # ans = realSqrt(x, 1e-6)
 # 如果要求4位小数，就多算2~4位，到1e-6或1e-8，保证精确
