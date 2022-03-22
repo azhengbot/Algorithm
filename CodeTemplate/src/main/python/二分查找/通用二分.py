@@ -13,7 +13,7 @@ class Solution:
         n = len(nums)
 
         # 开始位置（lower_bound）：查询第一个>=target的数
-        # 范围 [0 .. n-1 ] + [n表示不存在]
+        # 范围 [0 .. n-1 ] + [n表示不存在]
         l = 0
         r = n
 
@@ -28,7 +28,7 @@ class Solution:
         left = r
 
         # 结束位置：查询最后一个<=target的数
-        # 范围 [-1表示不存在] + [0 .. n-1 ]
+        # 范围 [-1表示不存在] + [0 .. n-1 ]
         l = -1
         r = n - 1
 
@@ -42,7 +42,7 @@ class Solution:
 
         right = r
 
-        # target出现在left, right
+        # target出现在left, right
         if right < left:
             return [-1, -1]
 
@@ -50,3 +50,19 @@ class Solution:
 
 
 # @lc code=end
+
+
+# 实数二分模板
+# ans = realSqrt(x, 1e-6)
+# 如果要求4位小数，就多算2~4位，到1e-6或1e-8，保证精确
+
+
+def realSqrt(x, eps=1e-6):
+    left, right = 0, max(x, 1)
+    while right - left > eps:
+        mid = (left + right) / 2
+        if mid * mid <= x:
+            left = mid
+        else:
+            right = mid
+    return right
