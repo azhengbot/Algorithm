@@ -21,15 +21,10 @@
                 
     
     <module>Common</module>
-    <module>BasicDataType</module>
     <module>Array</module>
-    <module>Hash</module>
     <module>Recursion</module>
-    <module>HomeWork</module>
-    <module>Search</module>
     <module>Heapq</module>
 
-    <module>BinarySearchTree</module>
     <module>BinarySearch</module>
     <module>Sort</module>
     <module>Greedy</module>
@@ -37,11 +32,11 @@
 
     <module>Tree</module>
     <module>UnionFindSet</module>
-    <module>ShortestPath</module>
     <module>Strings</module>
-    <module>KWayMerge</module>
     <module>Bit</module>
     <module>CodeTemplate</module>
+    <module>Stack</module>
+
     
       
   </modules>
