@@ -34,7 +34,7 @@ package BST;
  * TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class Solution0406 {
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
         return findSuccessor(root, p.val);
     }

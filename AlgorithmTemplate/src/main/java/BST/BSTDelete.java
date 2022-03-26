@@ -97,7 +97,7 @@ package BST;
 // * 如果 val 只有一棵树，直接删除 val， 把子树和父节点相连
 // * 如果有两棵树，需要找到后继，先删除后继，再**用后继节点代替 val 的位置** （因为后继是右子树一直往左走到底，所以后继最多只会有一棵树）
 
-class Solution {
+class Solution450 {
     // 在以root为根的子树中删除key，返回新的根
     public TreeNode deleteNode(TreeNode root, int key) {
         if (root == null) {

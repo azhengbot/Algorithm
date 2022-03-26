@@ -150,7 +150,7 @@ class BinaryHeap {
     }
 }
 
-class Solution {
+class Solution23 {
     public ListNode mergeKLists(ListNode[] lists) {
         BinaryHeap bh = new BinaryHeap();
 
