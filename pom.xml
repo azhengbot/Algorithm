@@ -19,23 +19,22 @@
   
   <modules>
                 
-    
+    <module>AlgorithmTemplate</module>
+
     <module>Common</module>
     <module>Array</module>
     <module>Recursion</module>
     <module>Heapq</module>
-
     <module>BinarySearch</module>
     <module>Sort</module>
     <module>Greedy</module>
     <module>DP</module>
-
     <module>Tree</module>
     <module>UnionFindSet</module>
     <module>Strings</module>
     <module>Bit</module>
-    <module>AlgorithmTemplate</module>
     <module>Stack</module>
+    <module>Deque</module>
 
     
       
