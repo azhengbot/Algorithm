@@ -35,6 +35,7 @@
     <module>Bit</module>
     <module>Stack</module>
     <module>Deque</module>
+    <module>Trie</module>
 
     
       
