@@ -36,6 +36,7 @@
     <module>Stack</module>
     <module>Deque</module>
     <module>Trie</module>
+    <module>Backtracking</module>
 
     
       
