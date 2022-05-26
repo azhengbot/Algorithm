@@ -1,3 +1,4 @@
+package segment_tree;
 /*
  * @lc app=leetcode.cn id=307 lang=java
  *
