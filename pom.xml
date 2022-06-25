@@ -30,6 +30,7 @@
     <module>Greedy</module>
     <module>DP</module>
     <module>Tree</module>
+    <module>SegmentTree</module>
     <module>UnionFindSet</module>
     <module>Strings</module>
     <module>Bit</module>
