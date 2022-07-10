@@ -5,6 +5,6 @@
     "code-runner.executorMap": {
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-        "python": "python -u",
+        "python": "/Users/azheng/.pyenv/shims/python -u",
     }
 }
