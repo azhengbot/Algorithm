@@ -76,5 +76,4 @@ class Solution:
 
         return y1 <= x2
 
-
 # @lc code=end
