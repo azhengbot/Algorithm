@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Solution1091",
+            "request": "launch",
+            "mainClass": "Solution1091",
+            "projectName": "BFS"
+        },
+        {
+            "type": "java",
+            "name": "Solution47",
+            "request": "launch",
+            "mainClass": "Solution47",
+            "projectName": "Recursion"
+        },
+        {
+            "type": "java",
+            "name": "Solution34",
+            "request": "launch",
+            "mainClass": "Solution34",
+            "projectName": "BinarySearch"
+        },
+        {
+            "type": "java",
             "name": "Launch LRUCache",
             "request": "launch",
             "mainClass": "LRUCache",
