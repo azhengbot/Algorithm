@@ -1,7 +1,7 @@
 #
 # @lc app=leetcode.cn id=2451 lang=python3
 #
-# [2451] 差值数组不同的字符串
+# [2451] 差值数组不同的字符[2451] 差值数组不同的字符串串
 #
 # https://leetcode.cn/problems/odd-string-difference/description/
 #

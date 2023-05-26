@@ -43,6 +43,7 @@
     <module>Competition</module>
     <module>Graph</module>
     <module>Violence</module>
+    <module>BFS</module>
 
     
       
