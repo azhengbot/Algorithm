@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "es5",
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "sourceMap": true,
+        "outDir": "dist",
+        "strict": true,
+        "lib": [
+            "es2015",
+            "dom"
+        ],
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        // "resolveJsonModule": true,
+        "experimentalDecorators": true
+    },
+    "include": [
+        "**/src/main/ts/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

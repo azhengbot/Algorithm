@@ -64,7 +64,7 @@
 // @lc code=start
 function shortestPathBinaryMatrix(grid: number[][]): number {
     const n = grid.length;
-    if (grid[0][0] == 1) {
+    if (grid[0][0] == 1 || grid[n - 1][n - 1] == 1) {
         return -1;
     }
 
@@ -82,6 +82,7 @@ function shortestPathBinaryMatrix(grid: number[][]): number {
     dq.push([0, 0])
     used[0][0] = true;
     let cnt = 1;
+
     while (dq.length != 0) {
         let dqCopy: number[][] = [];
         for (let coord of dq) {
@@ -100,15 +101,20 @@ function shortestPathBinaryMatrix(grid: number[][]): number {
                     continue;
                 }
                 dqCopy.push([ni, nj])
+                used[ni][nj] = true;
             }
         }
         dq = dqCopy;
+        // console.log(dq);
         cnt += 1
     }
     return -1
 
-
-
 };
 // @lc code=end
 
+const grid = [[0, 1, 1, 1, 1, 1, 1, 1], [0, 1, 1, 0, 0, 0, 0, 0], [0, 1, 0, 1, 1, 1, 1, 0], [0, 1, 0, 1, 1, 1, 1, 0], [0, 1, 1, 0, 0, 1, 1, 0], [0, 1, 1, 1, 1, 0, 1, 0], [0, 0, 0, 0, 0, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1, 0]]
+
+const res = shortestPathBinaryMatrix(grid);
+
+console.log(res)
