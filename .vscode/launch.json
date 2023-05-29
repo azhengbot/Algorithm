@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Solution2455",
+            "request": "launch",
+            "mainClass": "Solution2455",
+            "projectName": "Violence"
+        },
+        {
+            "type": "java",
             "name": "Solution1091",
             "request": "launch",
             "mainClass": "Solution1091",
