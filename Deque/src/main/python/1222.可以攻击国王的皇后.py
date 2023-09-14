@@ -74,7 +74,7 @@
 from collections import deque
 
 # @lc code=start
-from typing import List
+from typing import Deque, List, Tuple
 
 
 class Solution:
@@ -88,7 +88,7 @@ class Solution:
         for a, b in queens:
             queens_map[a][b] = True
 
-        dq = deque([(king, -1)])
+        dq: Deque[Tuple[List[int], int]] = deque([(king, -1)])
 
         ans = []
 
