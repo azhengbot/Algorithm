@@ -77,8 +77,8 @@
 // @lc code=start
 
 import java.util.Arrays;
-import java.util.Comparator;
-import java.util.stream.Collector;
+import java.util.List;
+import java.util.stream.Collectors;
 
 class Solution {
     public List<Integer> filterRestaurants(int[][] restaurants, int veganFriendly, int maxPrice, int maxDistance) {
