@@ -107,32 +107,26 @@ class StockPrice {
         return currPrice;
     }
 
-    public int maximum() {
-        while (!maxQ.isEmpty()) {
-            Integer[] arr = maxQ.peek();
+    private int helper(Queue<Integer[]> q) {
+        while (!q.isEmpty()) {
+            Integer[] arr = q.peek();
             Integer p = arr[0];
             Integer t = arr[1];
             if (m.get(t) == p) {
                 return p;
             }
-            maxQ.poll();
-            maxQ.add(new Integer[] { m.get(t), t });
+            q.poll();
+            q.add(new Integer[] { m.get(t), t });
         }
         return 0;
     }
 
+    public int maximum() {
+        return helper(maxQ);
+    }
+
     public int minimum() {
-        while (!minQ.isEmpty()) {
-            Integer[] arr = minQ.peek();
-            Integer p = arr[0];
-            Integer t = arr[1];
-            if (m.get(t) == p) {
-                return p;
-            }
-            minQ.poll();
-            minQ.add(new Integer[] { m.get(t), t });
-        }
-        return 0;
+        return helper(minQ);
     }
 }
 
