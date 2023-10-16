@@ -54,6 +54,8 @@
 #
 
 from collections import Counter
+from functools import reduce
+from operator import xor
 
 # @lc code=start
 from typing import List
@@ -61,11 +63,18 @@ from typing import List
 
 class Solution:
     def singleNumber(self, nums: List[int]) -> List[int]:
-        cnt = Counter(nums)
-        ans = []
-        for k in cnt:
-            if cnt[k] == 1:
-                ans.append(k)
+        # cnt = Counter(nums)
+        # ans = []
+        # for k in cnt:
+        #     if cnt[k] == 1:
+        #         ans.append(k)
+        # return ans
+        res = reduce(xor, nums)
+        ans = [0, 0]
+
+        for nu in nums:
+            ans[res & (-res) & nu != 0] ^= nu
+
         return ans
 
 
