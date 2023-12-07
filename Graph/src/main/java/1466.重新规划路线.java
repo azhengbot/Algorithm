@@ -70,10 +70,10 @@ import java.util.Arrays;
 
 class Solution {
     ArrayList<Integer[]>[] graph;
-    int ans = 0;
+    // int ans = 0;
 
     private int dfs(int node, int parent) {
-        // int ans = 0;
+        int ans = 0;
         for (Integer[] childTuple : graph[node]) {
             Integer child = childTuple[0];
             Integer val = childTuple[1];
@@ -82,7 +82,7 @@ class Solution {
                 continue;
             }
 
-            ans = val + dfs(child, node);
+            ans += val + dfs(child, node);
 
         }
         return ans;
