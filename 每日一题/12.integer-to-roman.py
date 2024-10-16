@@ -133,6 +133,15 @@
 # @lc code=start
 class Solution:
     def intToRoman(self, num: int) -> str:
+        ans = []
+        mod = 10
+        while num:
+            b = num % mod
+            num = num // mod
+
+            
+
+
 # @lc code=end
 
 
