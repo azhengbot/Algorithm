@@ -1,4 +1,4 @@
-#
+# TODO
 # @lc app=leetcode.cn id=6 lang=python3
 # @lcpr version=30204
 #
