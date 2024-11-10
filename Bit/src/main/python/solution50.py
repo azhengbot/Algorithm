@@ -7,6 +7,7 @@ class Solution:
             return 1 / self.myPow(x, -n)
 
         temp = x
+
         ans = 1
         while n > 0:
             if n & 1:
