@@ -66,9 +66,27 @@ from typing import List
 
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
-        sub_ans = []
+        n = len(candidates)
         ans = []
-        
+        sub_ans = []
+
+        def dfs(i):
+            nonlocal sub_ans
+            # print(sub_ans)
+            if i >= n:
+                if sum(sub_ans) == target:
+                    ans.append(sub_ans[:])
+                return
+            if sum(sub_ans) > target:
+                return
+
+            sub_ans.append(candidates[i])
+            dfs(i)
+            sub_ans.pop()
+
+            dfs(i + 1)
+
+        dfs(0)
         return ans
 
 
