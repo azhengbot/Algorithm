@@ -61,28 +61,30 @@ from typing import List
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
         n = len(nums)
-        ans = [-1, -1]
 
-        left, right = 0, n - 1
-        while left < right:
-            mid = (left + right + 1) // 2
-            print(left, nums[left], right, nums[right], "----", mid, nums[mid])
-            if nums[mid] > target:
-                right = mid - 1
+        l, r = -1, n
+
+        while l + 1 != r:
+            m = (l + r) // 2
+            if nums[m] < target:
+                l = m
             else:
-                left = mid
-        ans[1] = right
+                r = m
+        start = r
 
-        left, right = 0, n - 1
-        while left < right:
-            mid = (left + right - 1) // 2
-            if nums[mid] < target:
-                left = mid + 1
+        l, r = -1, n
+
+        while l + 1 != r:
+            m = (l + r) // 2
+            if nums[m] <= target:
+                l = m
             else:
-                right = mid
-        ans[0] = left
+                r = m
+        end = l
 
-        return ans
+        if start > end:
+            return [-1, -1]
+        return [start, end]
 
 
 # @lc code=end
