@@ -49,7 +49,6 @@
 
 # @lcpr-template-start
 
-from functools import lru_cache
 
 # @lcpr-template-end
 # @lc code=start
@@ -59,27 +58,21 @@ from typing import List
 class Solution:
     def minPathSum(self, grid: List[List[int]]) -> int:
         m, n = len(grid), len(grid[0])
-        to = ((0, 1), (1, 0))
 
-        @lru_cache
-        def dfs(i, j, res):
-            # print(i, j, res)
-            ans = float(inf)
-            if i >= m or j >= n or i < 0 or j < 0:
-                return ans
+        dp = [[float(inf)] * n for _ in range(m)]
 
-            if res > ans:
-                return ans
+        dp[0][0] = grid[0][0]
 
-            if i == m - 1 and j == n - 1:
-                ans = res + grid[i][j]
-                return ans
+        for i in range(m):
+            for j in range(n):
+                if i == j == 0:
+                    continue
+                if i - 1 >= 0:
+                    dp[i][j] = min(dp[i][j], dp[i - 1][j] + grid[i][j])
+                if j - 1 >= 0:
+                    dp[i][j] = min(dp[i][j], dp[i][j - 1] + grid[i][j])
 
-            ans = min(min([dfs(i + x, j + y, res + grid[i][j]) for x, y in to]), ans)
-
-            return ans
-
-        return dfs(0, 0, 0)
+        return dp[m - 1][n - 1]
 
 
 # @lc code=end
