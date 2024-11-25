@@ -61,11 +61,45 @@
 
 # @lcpr-template-end
 # @lc code=start
+from typing import List
+
+
 class Solution:
     def setZeroes(self, matrix: List[List[int]]) -> None:
         """
         Do not return anything, modify matrix in-place instead.
         """
+        m, n = len(matrix), len(matrix[0])
+
+        first_r = False
+        first_c = False
+
+        for c in range(m):
+            if matrix[c][0] == 0:
+                first_r = True
+
+        for r in range(n):
+            if matrix[0][r] == 0:
+                first_c = True
+
+        for c in range(1, m):
+            for r in range(1, n):
+                if matrix[c][r] == 0:
+                    matrix[c][0] = 0
+                    matrix[0][r] = 0
+        # print(matrix, first_r, first_c)
+        for c in range(m):
+            for r in range(n):
+                if c != 0 and r != 0 and (matrix[c][0] == 0 or matrix[0][r] == 0):
+                    matrix[c][r] = 0
+
+        if first_c:
+            for r in range(n):
+                matrix[0][r] = 0
+
+        if first_r:
+            for c in range(m):
+                matrix[c][0] = 0
 
 
 # @lc code=end
@@ -79,5 +113,7 @@ class Solution:
 # @lcpr case=start
 # [[0,1,2,0],[3,4,5,2],[1,3,1,5]]\n
 # @lcpr case=end
+
+#
 
 #
