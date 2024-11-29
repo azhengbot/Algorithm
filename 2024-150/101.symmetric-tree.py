@@ -1,4 +1,4 @@
-#
+# STUCK
 # @lc app=leetcode.cn id=101 lang=python3
 # @lcpr version=30204
 #
