@@ -13,7 +13,7 @@
 # Total Accepted:    149.3K
 # Total Submissions: 181.2K
 # Testcase Example:  '["BSTIterator","next","next","hasNext","next","hasNext","next","hasNext","next","hasNext"]\n' +
-  '[[[7,3,15,null,null,9,20]],[],[],[],[],[],[],[],[],[]]'
+  # '[[[7,3,15,null,null,9,20]],[],[],[],[],[],[],[],[],[]]'
 #
 # 实现一个二叉搜索树迭代器类BSTIterator ，表示一个按中序遍历二叉搜索树（BST）的迭代器：
 # 
