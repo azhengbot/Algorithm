@@ -59,7 +59,21 @@
  */
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
-        
+        ListNode dummy = new ListNode();
+        dummy.next = head;
+        ListNode curr = dummy;
+
+        while (curr.next != null && curr.next.next != null) {
+            int nextv = curr.next.val;
+            if (curr.next.next.val == nextv) {
+                while (curr.next != null && curr.next.val == nextv) {
+                    curr.next = curr.next.next; 
+                }
+            } else {
+                curr = curr.next;
+            }
+        }
+        return dummy.next;
     }
 }
 // @lc code=end
