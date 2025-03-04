@@ -63,9 +63,59 @@
 
 # @lcpr-template-end
 # @lc code=start
+from collections import defaultdict, deque
 class Solution:
+    
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
+        word_id = dict() 
+        graph = defaultdict(list)
+        node_id = 1
+        if endWord not in wordList:
+            return 0
+        def add_word(word):
+            nonlocal node_id
+            if word not in word_id:
+                word_id[word] = node_id
+                node_id += 1
+
+
+        def add_edge(word):
+            add_word(word)
+            id1 = word_id[word]
+            char_list = list(word)
+            n = len(char_list)
+            for i in range(n):
+                tmp_char = char_list[i]
+                char_list[i] = "*"
+                word2 = "".join(char_list)
+                add_word(word2)
+                id2 = word_id[word2]
+                graph[id1].append(id2)
+                graph[id2].append(id1)
+                char_list[i] = tmp_char
+
+        for word in wordList:
+            add_edge(word)
+        add_edge(beginWord)
+        # add_edge(endWord)
+
+        dq = deque([word_id[beginWord]])
+        ans = [float("inf")] * node_id
+        ans[word_id[beginWord]] = 0
         
+        while dq:
+            wid = dq.popleft()
+            if wid  == word_id[endWord]:
+                return ans[wid] // 2 + 1
+            
+            for nxt in graph[wid]:
+                if ans[nxt] == float("inf"):
+                    dq.append(nxt)
+                    ans[nxt] = ans[wid] + 1
+        return 0
+
+            
+
 # @lc code=end
 
 
